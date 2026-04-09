@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password: 123
+  host: localhost:3306
+
+development:
+  <<: *default
+  database: loja2
+
+test:
+  <<: *default
+  database: loja_test
+
+production:
+  <<: *default
+  database: loja_production
