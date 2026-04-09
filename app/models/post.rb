@@ -1,4 +1,4 @@
-class Posts < ApplicationRecord
+class Post < ApplicationRecord
   belongs_to :usuario
   has_many :Comments
 end
